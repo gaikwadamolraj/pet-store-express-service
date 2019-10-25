@@ -30,7 +30,13 @@ $ npm run watch
 Execute unit test cases:
 
 ```sh
-$ npm run test
+$ npm run test:unit
+```
+
+Execute integration test cases:
+
+```sh
+$ npm run test:component
 ```
 
 ## RESTful URLs

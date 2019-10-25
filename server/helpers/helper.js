@@ -32,7 +32,7 @@ var writeJSONFile = (filename, content) => {
  * 
  * @returns object
  */
-var deleteById = (arr , id) => arr.filter(p => parseInt(p.id) !== parseInt(id));
+var deleteById = (arr, id) => arr.filter(p => parseInt(p.id) !== parseInt(id));
 
 /**
  * @description provide array key and id, so it will return index of id

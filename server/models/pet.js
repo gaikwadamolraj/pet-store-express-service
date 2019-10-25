@@ -14,7 +14,7 @@ var createPetOwnerId = async (newPet, ownerId) => {
     } else {
       const id = { id: helper.getNewId(owner.pets) };
       newPet = { ...id, ...newPet };
-      const ownerIndex = helper.getIndexById(allPets,'owner', ownerId);
+      const ownerIndex = helper.getIndexById(allPets, 'owner', ownerId);
       owner.pets.push(newPet);
       allPets[ownerIndex].pets = owner.pets;
     }
@@ -36,12 +36,12 @@ var getPetByPetIdAndOwnerId = (id, ownerId) => {
     if (owner && owner.pets.length) {
       let pet = owner.pets.find(p => p.id == id);
       if (!pet) {
-        return { status: 404, message: `No pet found with ${id} id` };
+        return { status: 404, message: `Pet not found with id ${id}` };
       } else {
         return pet;
       }
     } else {
-      return { status: 404, message: `No pet found with ${id} id` };
+      return { status: 404, message: `Pet not found with id ${id}` };
     }
   } catch (err) {
     console.error(err);

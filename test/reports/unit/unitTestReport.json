@@ -5,9 +5,9 @@
     "passes": 16,
     "pending": 0,
     "failures": 0,
-    "start": "2019-10-25T09:35:34.120Z",
-    "end": "2019-10-25T09:35:34.192Z",
-    "duration": 72,
+    "start": "2019-10-25T14:35:08.173Z",
+    "end": "2019-10-25T14:35:08.230Z",
+    "duration": 57,
     "testsRegistered": 16,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "34c9f58c-4910-4eca-b9b9-bce5ad191fb5",
+      "uuid": "1034b134-eae2-4bda-b723-63eb88526372",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,9 +27,9 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9dc84b01-88c9-4f8a-9eab-625c644704e8",
+          "uuid": "4c934745-b012-4202-9fb8-e5baf19aaf91",
           "title": "helper file",
-          "fullFile": "/Users/amolngaikwad/mystuff/adform_assign/sample/RESTful_API/server/helpers/helper.spec.js",
+          "fullFile": "/Users/amolngaikwad/mystuff/adform_assign/sample/pet-store-express-service/server/helpers/helper.spec.js",
           "file": "/server/helpers/helper.spec.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -38,7 +38,7 @@
               "title": "getNewId() should get value 1",
               "fullTitle": "helper file getNewId() should get value 1",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "(0, _chai.expect)((0, _helper.getNewId)([])).to.equal(1);",
               "err": {},
-              "uuid": "b09a3383-485b-48af-bf3c-e37845ca19b9",
-              "parentUUID": "9dc84b01-88c9-4f8a-9eab-625c644704e8",
+              "uuid": "8c05f453-acd5-4288-832c-24c863b0978d",
+              "parentUUID": "4c934745-b012-4202-9fb8-e5baf19aaf91",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "(0, _chai.expect)((0, _helper.getNewId)([{\n  id: 1\n}])).to.equal(2);",
               "err": {},
-              "uuid": "8e8d2135-dace-4c9e-be91-98c50149ef25",
-              "parentUUID": "9dc84b01-88c9-4f8a-9eab-625c644704e8",
+              "uuid": "fa493780-661d-482a-8341-332287986d44",
+              "parentUUID": "4c934745-b012-4202-9fb8-e5baf19aaf91",
               "isHook": false,
               "skipped": false
             },
@@ -74,17 +74,17 @@
               "title": "writeJSONFile()  writes data to file",
               "fullTitle": "helper file writeJSONFile()  writes data to file",
               "timedOut": false,
-              "duration": 1,
+              "duration": 2,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "(0, _chai.expect)((0, _helper.writeJSONFile)('./data/dummy.js', {\n  name: 'Amol'\n}));",
+              "code": "(0, _chai.expect)((0, _helper.writeJSONFile)('./data/dummy.json', {\n  name: 'Amol'\n}));",
               "err": {},
-              "uuid": "4c33a63d-0e67-4fa7-817c-19448b4ba5b8",
-              "parentUUID": "9dc84b01-88c9-4f8a-9eab-625c644704e8",
+              "uuid": "a697b267-c715-486a-bb6f-a07cef3048ba",
+              "parentUUID": "4c934745-b012-4202-9fb8-e5baf19aaf91",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "deleteById() should  get empty array when success",
               "fullTitle": "helper file deleteById() should  get empty array when success",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -101,8 +101,8 @@
               "context": null,
               "code": "(0, _chai.expect)((0, _helper.deleteById)([{\n  id: 1\n}], 1)).to.be.empty;",
               "err": {},
-              "uuid": "7580103e-86dc-4b18-9a6b-4b218d1ade7d",
-              "parentUUID": "9dc84b01-88c9-4f8a-9eab-625c644704e8",
+              "uuid": "366b62d1-2b40-43ff-8461-1210c1d6c2db",
+              "parentUUID": "4c934745-b012-4202-9fb8-e5baf19aaf91",
               "isHook": false,
               "skipped": false
             },
@@ -119,8 +119,8 @@
               "context": null,
               "code": "(0, _chai.expect)((0, _helper.deleteById)([{\n  id: 2\n}], 1)).to.be.an('array');",
               "err": {},
-              "uuid": "ebe71758-2732-41f4-b64d-b03e63446213",
-              "parentUUID": "9dc84b01-88c9-4f8a-9eab-625c644704e8",
+              "uuid": "503b2557-80dd-466d-bbf8-11f12221683b",
+              "parentUUID": "4c934745-b012-4202-9fb8-e5baf19aaf91",
               "isHook": false,
               "skipped": false
             },
@@ -137,33 +137,33 @@
               "context": null,
               "code": "(0, _chai.expect)((0, _helper.getIndexById)([{\n  id: 1\n}], 'id', 1)).to.equal(0);",
               "err": {},
-              "uuid": "79155fa7-d80e-4789-a956-40ac7550878d",
-              "parentUUID": "9dc84b01-88c9-4f8a-9eab-625c644704e8",
+              "uuid": "71ea7b92-1574-4ad5-919b-bedbdd5964aa",
+              "parentUUID": "4c934745-b012-4202-9fb8-e5baf19aaf91",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b09a3383-485b-48af-bf3c-e37845ca19b9",
-            "8e8d2135-dace-4c9e-be91-98c50149ef25",
-            "4c33a63d-0e67-4fa7-817c-19448b4ba5b8",
-            "7580103e-86dc-4b18-9a6b-4b218d1ade7d",
-            "ebe71758-2732-41f4-b64d-b03e63446213",
-            "79155fa7-d80e-4789-a956-40ac7550878d"
+            "8c05f453-acd5-4288-832c-24c863b0978d",
+            "fa493780-661d-482a-8341-332287986d44",
+            "a697b267-c715-486a-bb6f-a07cef3048ba",
+            "366b62d1-2b40-43ff-8461-1210c1d6c2db",
+            "503b2557-80dd-466d-bbf8-11f12221683b",
+            "71ea7b92-1574-4ad5-919b-bedbdd5964aa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "dc18ab13-7ea0-4608-a29e-50d31d3b4eb5",
+          "uuid": "6e647a9a-d049-4aff-b303-a8bd6b350f01",
           "title": "owner model",
-          "fullFile": "/Users/amolngaikwad/mystuff/adform_assign/sample/RESTful_API/server/models/owner.spec.js",
+          "fullFile": "/Users/amolngaikwad/mystuff/adform_assign/sample/pet-store-express-service/server/models/owner.spec.js",
           "file": "/server/models/owner.spec.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -181,8 +181,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "e9faa5b7-8f58-4983-bbfc-262a3e37e231",
-              "parentUUID": "dc18ab13-7ea0-4608-a29e-50d31d3b4eb5",
+              "uuid": "b5a749c4-2001-4f82-aea6-e5d0c7073ba3",
+              "parentUUID": "6e647a9a-d049-4aff-b303-a8bd6b350f01",
               "isHook": false,
               "skipped": false
             },
@@ -199,8 +199,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "18ea2339-ae41-4c58-bf28-deea389c3dae",
-              "parentUUID": "dc18ab13-7ea0-4608-a29e-50d31d3b4eb5",
+              "uuid": "b06731d1-b9af-4292-b85b-ce8cfe554dfc",
+              "parentUUID": "6e647a9a-d049-4aff-b303-a8bd6b350f01",
               "isHook": false,
               "skipped": false
             },
@@ -217,8 +217,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "64f17f38-20e3-433b-968e-c67a0acefe81",
-              "parentUUID": "dc18ab13-7ea0-4608-a29e-50d31d3b4eb5",
+              "uuid": "87ece078-adc9-4d40-a91c-2b2636152b98",
+              "parentUUID": "6e647a9a-d049-4aff-b303-a8bd6b350f01",
               "isHook": false,
               "skipped": false
             },
@@ -235,8 +235,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "bf4f34b2-e8e0-433b-8e4f-17436a76ec38",
-              "parentUUID": "dc18ab13-7ea0-4608-a29e-50d31d3b4eb5",
+              "uuid": "9386a16e-5ce9-48a7-a7c6-bd7c691d3d39",
+              "parentUUID": "6e647a9a-d049-4aff-b303-a8bd6b350f01",
               "isHook": false,
               "skipped": false
             },
@@ -253,19 +253,19 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "476376dc-7086-4922-af72-2bd2b1ba73fd",
-              "parentUUID": "dc18ab13-7ea0-4608-a29e-50d31d3b4eb5",
+              "uuid": "b45f90a2-31a2-4c6a-81e8-4f6bdebb0d9c",
+              "parentUUID": "6e647a9a-d049-4aff-b303-a8bd6b350f01",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e9faa5b7-8f58-4983-bbfc-262a3e37e231",
-            "18ea2339-ae41-4c58-bf28-deea389c3dae",
-            "64f17f38-20e3-433b-968e-c67a0acefe81",
-            "bf4f34b2-e8e0-433b-8e4f-17436a76ec38",
-            "476376dc-7086-4922-af72-2bd2b1ba73fd"
+            "b5a749c4-2001-4f82-aea6-e5d0c7073ba3",
+            "b06731d1-b9af-4292-b85b-ce8cfe554dfc",
+            "87ece078-adc9-4d40-a91c-2b2636152b98",
+            "9386a16e-5ce9-48a7-a7c6-bd7c691d3d39",
+            "b45f90a2-31a2-4c6a-81e8-4f6bdebb0d9c"
           ],
           "failures": [],
           "pending": [],
@@ -276,9 +276,9 @@
           "_timeout": 2000
         },
         {
-          "uuid": "d27e3e21-065b-4f74-bcf4-d7e5ec33dd86",
+          "uuid": "0b85153d-b724-48a4-804e-4093ee1f7699",
           "title": "pets model file file",
-          "fullFile": "/Users/amolngaikwad/mystuff/adform_assign/sample/RESTful_API/server/models/pet.spec.js",
+          "fullFile": "/Users/amolngaikwad/mystuff/adform_assign/sample/pet-store-express-service/server/models/pet.spec.js",
           "file": "/server/models/pet.spec.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -296,8 +296,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "767126d1-5c38-48e1-99fd-1e168725992a",
-              "parentUUID": "d27e3e21-065b-4f74-bcf4-d7e5ec33dd86",
+              "uuid": "1fa5101e-34ad-45b5-b0f5-63c334ccc033",
+              "parentUUID": "0b85153d-b724-48a4-804e-4093ee1f7699",
               "isHook": false,
               "skipped": false
             },
@@ -314,8 +314,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "2a180456-5061-42cc-a8ce-c8a1f4adf306",
-              "parentUUID": "d27e3e21-065b-4f74-bcf4-d7e5ec33dd86",
+              "uuid": "31653aea-21fa-4143-bb5c-84a5fd22657b",
+              "parentUUID": "0b85153d-b724-48a4-804e-4093ee1f7699",
               "isHook": false,
               "skipped": false
             },
@@ -323,7 +323,7 @@
               "title": "getAllPetsByOwnerId() should get pets array",
               "fullTitle": "pets model file file getAllPetsByOwnerId() should get pets array",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -332,8 +332,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "2c1ebfd1-99bd-4d2a-85d2-de870d3e5b0f",
-              "parentUUID": "d27e3e21-065b-4f74-bcf4-d7e5ec33dd86",
+              "uuid": "d07f393b-40b7-4e5b-820b-4b02ffe8f226",
+              "parentUUID": "0b85153d-b724-48a4-804e-4093ee1f7699",
               "isHook": false,
               "skipped": false
             },
@@ -341,7 +341,7 @@
               "title": "updatePetByIdAndOwnerId() should get updated pets data",
               "fullTitle": "pets model file file updatePetByIdAndOwnerId() should get updated pets data",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -350,8 +350,8 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "8a699f5d-0b77-45e0-b4f0-8cb1fea0f0a3",
-              "parentUUID": "d27e3e21-065b-4f74-bcf4-d7e5ec33dd86",
+              "uuid": "0dd76433-7f3d-4973-ae26-9790f2616da7",
+              "parentUUID": "0b85153d-b724-48a4-804e-4093ee1f7699",
               "isHook": false,
               "skipped": false
             },
@@ -368,24 +368,24 @@
               "context": null,
               "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
               "err": {},
-              "uuid": "c8c75615-92fb-4e3f-a2f5-6399bec243c3",
-              "parentUUID": "d27e3e21-065b-4f74-bcf4-d7e5ec33dd86",
+              "uuid": "d890b0af-cb66-4678-9f23-3834fa80c6fe",
+              "parentUUID": "0b85153d-b724-48a4-804e-4093ee1f7699",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "767126d1-5c38-48e1-99fd-1e168725992a",
-            "2a180456-5061-42cc-a8ce-c8a1f4adf306",
-            "2c1ebfd1-99bd-4d2a-85d2-de870d3e5b0f",
-            "8a699f5d-0b77-45e0-b4f0-8cb1fea0f0a3",
-            "c8c75615-92fb-4e3f-a2f5-6399bec243c3"
+            "1fa5101e-34ad-45b5-b0f5-63c334ccc033",
+            "31653aea-21fa-4143-bb5c-84a5fd22657b",
+            "d07f393b-40b7-4e5b-820b-4b02ffe8f226",
+            "0dd76433-7f3d-4973-ae26-9790f2616da7",
+            "d890b0af-cb66-4678-9f23-3834fa80c6fe"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5,
+          "duration": 3,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -408,7 +408,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "mochawesome",
+        "reportFilename": "unitTestReport",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -417,7 +417,10 @@
       "version": "4.1.0"
     },
     "marge": {
-      "options": null,
+      "options": {
+        "reportDir": "./test/reports/unit",
+        "reportFilename": "unitTestReport"
+      },
       "version": "4.0.1"
     }
   }
