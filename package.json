@@ -6,7 +6,7 @@
   "scripts": {
     "start": "export NODE_ENV=dev, NODE_PORT=3000  --exec babel-node ./server/server.js",
     "watch": "nodemon --exec babel-node ./server/server.js",
-    "test": "mocha --require @babel/register './**/*.spec.js'",
+    "test": "mocha --require @babel/register './**/*.spec.js' --reporter mochawesome",
     "prebuild": "rimraf ./build",
     "build": "mkdirp ./build && babel --out-dir ./build --source-maps --copy-files  ./server",
     "prod": "node ./build/server.js",
@@ -24,6 +24,7 @@
     "chai": "^4.2.0",
     "mkdirp": "^0.5.1",
     "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
     "nodemon": "^1.18.4",
     "rimraf": "^2.6.2"
   },

@@ -18,30 +18,14 @@ var create = async (newOwner) => {
 }
 
 var getOwners = async () => owners;
-// var getOwner = async (id) => owners.find(o => o.id == id);
-var getOwnerById = async (id) => (owners.find(o => o.id == id) || null );
-// var getOwnerById = async (id) => {
-//   try {
-//     let owner = await getOwner(id);
-//     console.log('Here', owner);
-//     if (!owner) {
-//       console.log('Here if ');
-//       throw new Error({ status: 500, message: `No owner found with ${id} id`});
-//     }
-//     return owner;
-//   } catch (err) {
-//     console.error(err);
-//     throw new Error({ status: 500, message: `Failed to fetch owner` });
-//   }
-// }
-
+var getOwnerById = async (id) => (owners.find(o => o.id == id) || null);
 var updateOwnerById = async (owner, newOwner) => {
   try {
     const index = helper.getIndexById(owners, 'id', owner.id);
-      let id = { id: owner.id };
-      newOwner = { ...id, ...newOwner };
-      owners[index] = newOwner;
-      helper.writeJSONFile(OwnerFileName, owners);
+    let id = { id: owner.id };
+    newOwner = { ...id, ...newOwner };
+    owners[index] = newOwner;
+    helper.writeJSONFile(OwnerFileName, owners);
     return owners[index];
   } catch (err) {
     console.error(err);
