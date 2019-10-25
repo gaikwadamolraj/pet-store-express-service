@@ -38,6 +38,11 @@ Execute integration test cases:
 ```sh
 $ npm run test:component
 ```
+ Test Reports path:
+
+```
+/test/reports
+```
 
 ## RESTful URLs
 
