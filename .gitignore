@@ -1,4 +1,3 @@
 node_modules/*
 .history
-test/report/component/*
-test/report/unit/*
+**/.DS_Store

@@ -16,6 +16,9 @@
     "type": "git",
     "url": "https://github.com/gaikwadamolraj/pet-store-express-service.git"
   },
+  "pre-commit": [
+    "test:unit"
+  ],
   "keywords": [],
   "author": "Amol Gaikwad",
   "license": "ISC",
