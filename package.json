@@ -40,7 +40,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/register": "^7.6.2",
     "@babel/runtime": "^7.6.3",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-validator": "^6.2.0",
     "morgan": "^1.9.1",
     "pm2": "^3.2.2"
